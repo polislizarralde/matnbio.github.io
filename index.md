@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Matemática & Biología 
 ---
 
 # Biología Matematica Universidad EAFIT
