@@ -23,3 +23,4 @@ title: Test
 ## Links y Herramientas
 
 + Aplicación Web para Itagui, Neiva, Bello
++ generador de Calendarios Epidemiologicos: [epiScript](EpiCals/epiyear.py)
