@@ -13,7 +13,8 @@ title: Test
 
 ## Información Útil
 
-+ Calendarios Epidemiologicos
+### [Calendarios Epidemiologicos](EpiCals/epicals.md)
+
 + Casos por Semana por Año
   + Bello
   + Itagui
