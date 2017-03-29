@@ -10,7 +10,7 @@
 ## Información Útil
 
 + Calendarios Epidemiologicos
-+ Casos por Semana
++ Casos por Semana por Año
   + Bello
   + Itagui
   + Neiva
