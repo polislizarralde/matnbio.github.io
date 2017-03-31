@@ -4,6 +4,7 @@
 import calendar
 import datetime
 from datetime import timedelta
+import sys
 
 aday = timedelta(days=1)
 
@@ -56,8 +57,18 @@ def printWeeks(file,weeks):
             w += repr(j).rjust(4)
         file.write((w + " <- Semana: {} \n").format(i))
 
+def printWeeksCSV(file, weeks):
+    with file as sys.stdout:
+        print ', '.join("DLMWJVS")
+        print '\n'.join([', '.join(map(str, week)) for week in weeks])
+
 for z in range(2002,2017):
     a = open(str(z)+".txt",'w')
-    printWeeks(a,epiyear(z))# -> [[1,2],[3,4,5,6,7,8,9]...[25,26,27,28,29,30,31]]
+    printWeeks(a,epiyear(z))
+
+for z in range(2002,2017):
+    a = open(str(z)+".csv",'w')
+    printWeeksCSV(a,epiyear(z))# -> [[1,2],[3,4,5,6,7,8,9]...[25,26,27,28,29,30,31]]
+
 #epiyear(2016)
 #print epiyear(2001)# -> [[31,1,2,3,4,5,6],...,]
